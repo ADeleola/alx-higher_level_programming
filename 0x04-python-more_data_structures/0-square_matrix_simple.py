@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-Newsquare = []
-i = 0
-for x in matrix:
-    Newsquare.append([])
-    for y in matrix[i]:
-        Newsquare[i].append(y**2)
-        i += 1
-return (Newsquare)
+"""computes the square value of all integers of a matrix."""
+if not matrix:
+    return None
+return list(list(map(lambda a: a*a, num_list)) for num_list in matrix)
